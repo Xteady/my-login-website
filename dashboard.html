@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX 风格仪表板</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SPACE<span>X</span></div>
+            <ul>
+                <li><a href="#missions">任务</a></li>
+                <li><a href="#launches">发射</a></li>
+                <li><a href="#vehicles">飞行器</a></li>
+                <li><a href="#profile">个人资料</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <h1>欢迎回来，<span id="username"></span></h1>
+        </section>
+        <section id="dashboard">
+            <div class="dashboard-item">
+                <h2>下一次发射</h2>
+                <p id="nextLaunch">加载中...</p>
+            </div>
+            <div class="dashboard-item">
+                <h2>任务统计</h2>
+                <p id="missionStats">加载中...</p>
+            </div>
+            <div class="dashboard-item">
+                <h2>个人资料</h2>
+                <p>用户名: <span id="profileUsername"></span></p>
+                <p>邮箱: <span id="email"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="logoutBtn">登出</button>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>
